@@ -13,11 +13,11 @@
     max-width: 1024px;
     gap: 50px;
 
-    .user-card:last-child{
+    .user-persona:last-child{
       margin-bottom: 50px;
     }
 
-    .user-card{
+    .user-persona{
       width: 100%;
 
       .header{
@@ -32,32 +32,60 @@
         }
       }
 
-      .content{
+      .content {
         display: flex;
         gap: 12px;
         box-sizing: border-box;
         padding: 12px;
 
-        .panel-group{
+        .panel-group {
           display: flex;
           flex-direction: column;
           flex: 1;
           gap: 12px;
 
-          .panel{
+          .panel {
+            display: flex;
+            flex-direction: column;
             background: #F0F0F0;
-            border-radius: 8px;
+            border-radius: 0.5rem;
             border: 1px solid #F0F0F0;
             box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+
+            .field{
+              width: 35%;
+            }
+
+            .label{
+              width: 65%;
+            }
           }
+
+          .panel ul li:not(:last-child) {
+            padding-bottom: 4px;
+          }
+
           .panel.square {
             aspect-ratio: 1 / 1; /* makes it a square */
+            padding: 0;
           }
         }
       }
 
       .admirer, .clutch, .enthusiast, .planner, .florist {
-        height: 600px;
+        height: 640px;
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          flex-direction: column; /* stack the panel-groups */
+        }
+
+        .admirer, .clutch, .enthusiast, .planner, .florist {
+          height: auto;
+        }
       }
 
       .admirer{
