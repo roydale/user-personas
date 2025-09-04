@@ -1,0 +1,160 @@
+<div class="persona mb-4">
+  @let user = persona();
+  <div class="profile mb-3" [style.border]="'2px solid ' + user?.type?.themeColor">
+    <div class="header"
+         title="{{ user?.name }} - {{ user?.type?.name }}"
+         [style.background-color]="user?.type?.themeColor">
+      <h4>{{ user?.name }}</h4>
+      <h5><i class="bi {{ user?.type?.icon }}"></i> {{ user?.type?.name }}</h5>
+    </div>
+    <div class="content">
+
+      <div class="panel-group">
+        <!-- PHOTO -->
+        <div class="panel square">
+          <img ngSrc="/assets/photos/users/{{ user?.photo?.fileName }}"
+               width="512"
+               height="512"
+               alt="{{ user?.photo?.description }}"
+               title="Photo: {{ user?.photo?.description }}"
+               class="rounded-3 w-100 h-auto"
+               priority />
+        </div>
+        <!-- QUOTE -->
+        <div class="panel">
+          <div class="d-flex flex-column" title="{{ user?.quote }}">
+            <span class="fs-4 fw-semibold">
+              <i class="bi bi-quote"></i>
+            </span>
+            <span class="fs-5 px-3 text-dark text-opacity-75">{{ user?.quote }}</span>
+            <span class="fs-4 fw-semibold">
+              <i class="bi bi-quote float-end" style="transform: rotate(180deg);"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <!-- DEMOGRAPHICS -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Demographics">
+              <i class="bi bi-person-circle"></i> Demographics
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <div class="d-flex gap-2" title="Age: {{ user?.demographics?.age }}">
+              <span class="fw-semibold field">Age</span>
+              <span class="label">{{ user?.demographics?.age }}</span>
+            </div>
+            <div class="d-flex gap-2" title="Occupation: {{ user?.demographics?.occupation }}">
+              <span class="fw-semibold field">Occupation</span>
+              <span class="label">{{ user?.demographics?.occupation }}</span>
+            </div>
+            <div class="d-flex gap-2" title="Status: {{ user?.demographics?.status }}">
+              <span class="fw-semibold field">Status</span>
+              <span class="label">{{ user?.demographics?.status }}</span>
+            </div>
+            <div class="d-flex gap-2" title="Location: {{ user?.demographics?.location }}">
+              <span class="fw-semibold field">Location</span>
+              <span class="label">{{ user?.demographics?.location }}</span>
+            </div>
+          </div>
+        </div>
+        <!-- GOALS -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Goals">
+              <i class="bi bi-person-arms-up"></i> Goals
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <ul class="mb-0">
+              @for (goal of user?.keyGoals; track goal) {
+                <li title="{{ goal }}"><span>{{ goal }}</span></li>
+              }
+            </ul>
+          </div>
+        </div>
+        <!-- BEHAVIOR -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Behavior">
+              <i class="bi bi-emoji-smile"></i> Behavior
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <ul class="mb-0">
+              @for (behavior of user?.keyBehaviors; track behavior) {
+                <li title="{{ behavior }}"><span>{{ behavior }}</span></li>
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <!-- TRAITS -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Traits">
+              <i class="bi bi-person-check"></i> Traits
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <div class="d-flex align-items-center gap-2"
+                 title="Tech-savvy: {{ user?.traits?.techSavvy?.text }}">
+              <span class="fw-semibold" [style.width.%]="45">Tech-savvy</span>
+              <div class="progress bg-white" [style.width.%]="55" role="progressbar">
+                <div class="progress-bar text-bg-danger"
+                     [style.width.%]="((user?.traits?.techSavvy?.value ?? 0) * 20)"></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2"
+                 title="Floral Knowledge: {{ user?.traits?.floralKnowledge?.text }}">
+              <span class="fw-semibold" [style.width.%]="45">Floral Knowledge</span>
+              <div class="progress bg-white" [style.width.%]="55" role="progressbar">
+                <div class="progress-bar text-bg-warning"
+                     [style.width.%]="((user?.traits?.floralKnowledge?.value ?? 0) * 20)"></div>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <span class="fw-semibold" [style.width.%]="45">Planning Style</span>
+              <div class="d-flex flex-column" [style.width.%]="55">
+                @for (style of user?.traits?.planningStyle; track style) {
+                  <span title="Planning Style: {{ style.value }}">
+                    <i class="bi {{ style.icon }}"></i> {{ style.value }}
+                  </span>
+                }
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <span class="fw-semibold" [style.width.%]="45">Buying Frequency</span>
+              <div class="d-flex flex-column" [style.width.%]="55">
+                @for (frequency of user?.traits?.buyingFrequency; track frequency) {
+                  <span title="Buying Frequency: {{ frequency.value }}">
+                    <i class="bi {{ frequency.icon }}"></i> {{ frequency.value }}
+                  </span>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ENVIRONMENT -->
+        <div class="panel square">
+          <img ngSrc="/assets/photos/environments/{{ user?.environment?.fileName }}"
+               width="512"
+               height="512"
+               alt="{{ user?.environment?.description }}"
+               title="Environment: {{ user?.environment?.description }}"
+               class="rounded-3 w-100 h-auto"
+               priority />
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary">Capture</button>
+  </div>
+</div>

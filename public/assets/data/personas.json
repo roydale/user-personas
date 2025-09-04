@@ -1,0 +1,305 @@
+[
+  {
+    "id": 1,
+    "type": {
+      "id": 1,
+      "name": "Admirer",
+      "icon": "bi-hearts",
+      "themeColor": "#F59E0B"
+    },
+    "name": "Jessica Chen",
+    "photo": {
+      "fileName": "jessica.png",
+      "description": "A candid photo of a young woman in her 20s sitting at a café, smiling at her laptop."
+    },
+    "quote": "I like looking at flowers, even if I don’t always buy them, it makes me happy.",
+    "demographics": {
+      "age": 27,
+      "occupation": "Graphic Designer",
+      "status": "Single",
+      "location": "Paramus, NJ"
+    },
+    "keyGoals": [
+      "Browse casually or for inspiration.",
+      "Stay updated on seasonal themes.",
+      "Find simple, affordable flowers that feel special."
+    ],
+    "keyBehaviors": [
+      "She may not buy flowers often, but she’ll pick them up on impulse if something catches her eye.",
+      "Is drawn to visuals and artistic arrangements.",
+      "Doesn’t know much about floral types."
+    ],
+    "traits": {
+      "techSavvy": {
+        "value": 4,
+        "text": "High"
+      },
+      "floralKnowledge": {
+        "value": 2,
+        "text": "Low to Medium"
+      },
+      "planningStyle": [
+        {
+          "icon": "bi-cup-hot",
+          "value": "Casual"
+        }
+      ],
+      "buyingFrequency": [
+        {
+          "icon": "bi-calendar3-event",
+          "value": "Occasional"
+        }
+      ]
+    },
+    "environment": {
+      "fileName": "env_jessica.png",
+      "description": "A cozy, creative home setup, laptop open with design tools, maybe mood boards or sketches, a small vase of flowers on the desk for inspiration."
+    }
+  },
+  {
+    "id": 2,
+    "type": {
+      "id": 2,
+      "name": "Clutch",
+      "icon": "bi-alarm",
+      "themeColor": "#2563EB"
+    },
+    "name": "Carlos Rivera",
+    "photo": {
+      "fileName": "carlos.png",
+      "description": "A candid photo of a young man in his early 30s rushing into a store or on his phone while commuting, city buildings in the background, with a slightly hurried look."
+    },
+    "quote": "I need something fast, I don’t want to show up empty-handed.",
+    "demographics": {
+      "age": 31,
+      "occupation": "Sales Manager",
+      "status": "Single",
+      "location": "Lodi, NJ"
+    },
+    "keyGoals": [
+      "Order quickly.",
+      "Find reliable same-day options.",
+      "Receive recommendations based on occasion or price."
+    ],
+    "keyBehaviors": [
+      "Makes rushed decisions.",
+      "Avoids the stress of picking through options or variety.",
+      "Values speed, same-day delivery, and ready-to-go options.",
+      "Prefers a mobile-friendly flow."
+    ],
+    "traits": {
+      "techSavvy": {
+        "value": 4,
+        "text": "High"
+      },
+      "floralKnowledge": {
+        "value": 1,
+        "text": "Low"
+      },
+      "planningStyle": [
+        {
+          "icon": "bi-lightning",
+          "value": "Spontaneous"
+        }
+      ],
+      "buyingFrequency": [
+        {
+          "icon": "bi-activity",
+          "value": "Irregular"
+        },
+        {
+          "icon": "bi-exclamation-circle",
+          "value": "Urgent"
+        }
+      ]
+    },
+    "environment": {
+      "fileName": "env_carlos.png",
+      "description": "An office space with a busy environment."
+    }
+  },
+  {
+    "id": 3,
+    "type": {
+      "id": 3,
+      "name": "Enthusiast",
+      "icon": "bi-trophy",
+      "themeColor": "#10B981"
+    },
+    "name": "Emily Johnson",
+    "photo": {
+      "fileName": "emily.png",
+      "description": "A candid photo of a stylish woman in her 40s checking floral centerpieces or arranging floral decorations at an event."
+    },
+    "quote": "The right flowers can make or break an event's atmosphere.",
+    "demographics": {
+      "age": 45,
+      "occupation": "Event Designer",
+      "status": "Divorced",
+      "location": "Rutherford, NJ"
+    },
+    "keyGoals": [
+      "Find creative, fresh, and unique arrangements for events and clients.",
+      "Get deals or promos for bulk purchases, and prefers scheduled calls for them.",
+      "Discover seasonal selections.",
+      "Stay up to date on stock information."
+    ],
+    "keyBehaviors": [
+      "Appreciates flower or arrangement details and information, and how to care for them.",
+      "Buys in large quantities for events.",
+      "Is always conscious of the stock of certain flowers she needs."
+    ],
+    "traits": {
+      "techSavvy": {
+        "value": 3,
+        "text": "Medium"
+      },
+      "floralKnowledge": {
+        "value": 4,
+        "text": "High"
+      },
+      "planningStyle": [
+        {
+          "icon": "bi-shuffle",
+          "value": "Flexible"
+        }
+      ],
+      "buyingFrequency": [
+        {
+          "icon": "bi-arrow-repeat",
+          "value": "Frequent"
+        }
+      ]
+    },
+    "environment": {
+      "fileName": "env_emily.png",
+      "description": "A creative workspace with buckets of flowers, ribbons, décor items, and sketches of designs."
+    }
+  },
+  {
+    "id": 4,
+    "type": {
+      "id": 4,
+      "name": "Planner",
+      "icon": "bi-journal-check",
+      "themeColor": "#6B7280"
+    },
+    "name": "Karen Mitchell",
+    "photo": {
+      "fileName": "karen.png",
+      "description": "A candid photo of a woman in her mid-30s at a tidy home desk, with a planner, sticky notes, or a calendar in the frame, showing she likes to keep things scheduled."
+    },
+    "quote": "I like to plan ahead so I never miss an important occasion, and I want great value while I’m at it.",
+    "demographics": {
+      "age": 34,
+      "occupation": "Elementary School Teacher",
+      "status": "Married",
+      "location": "Hackensack, NJ"
+    },
+    "keyGoals": [
+      "Schedule flower gifts ahead of time for birthdays, anniversaries, and holidays.",
+      "Receive reliable reminders so nothing is forgotten.",
+      "Make sure her gifts feel thoughtful and well-prepared.",
+      "Stay within a budget and feel she’s getting good value."
+    ],
+    "keyBehaviors": [
+      "Appreciates reminders for important dates.",
+      "Prefers advance orders.",
+      "Compares options for the best deal before finalizing.",
+      "Values reliability and timely delivery."
+    ],
+    "traits": {
+      "techSavvy": {
+        "value": 3,
+        "text": "Medium"
+      },
+      "floralKnowledge": {
+        "value": 2,
+        "text": "Low to Medium"
+      },
+      "planningStyle": [
+        {
+          "icon": "bi-card-checklist",
+          "value": "Highly Organized"
+        },
+        {
+          "icon": "bi-cash",
+          "value": "Budget Conscious"
+        }
+      ],
+      "buyingFrequency": [
+        {
+          "icon": "bi-calendar3",
+          "value": "Regular (holidays/events)"
+        }
+      ]
+    },
+    "environment": {
+      "fileName": "env_karen.png",
+      "description": "A tidy desk with a laptop, a paper planner, a coffee mug, and maybe a phone."
+    }
+  },
+  {
+    "id": 5,
+    "type": {
+      "id": 5,
+      "name": "Florist (Internal Users)",
+      "icon": "bi-flower1",
+      "themeColor": "#F43F5E"
+    },
+    "name": "Lily da Floris",
+    "photo": {
+      "fileName": "lily.png",
+      "description": "A candid photo of a woman in her 40s, wearing an apron arranging flowers in a shop, behind the counter."
+    },
+    "quote": "I want my website to make ordering easy, so I can spend more time designing.",
+    "demographics": {
+      "age": 42,
+      "occupation": "Florist/Shop Owner",
+      "status": "Married",
+      "location": "Fairview, NJ"
+    },
+    "keyGoals": [
+      "Simplified and secure transactions.",
+      "Attract repeat customers.",
+      "Efficient inventory tracking.",
+      "More time for the creative side."
+    ],
+    "keyBehaviors": [
+      "Balances creativity with running the business.",
+      "Ensures customer satisfaction.",
+      "Prefers automated processes.",
+      "Values efficiency."
+    ],
+    "traits": {
+      "techSavvy": {
+        "value": 2,
+        "text": "Low to Medium"
+      },
+      "floralKnowledge": {
+        "value": 5,
+        "text": "Expert"
+      },
+      "planningStyle": [
+        {
+          "icon": "bi-card-list",
+          "value": "Organized"
+        },
+        {
+          "icon": "bi-hourglass-split",
+          "value": "Busy"
+        }
+      ],
+      "buyingFrequency": [
+        {
+          "icon": "bi-calendar3-week",
+          "value": "Daily (business need)"
+        }
+      ]
+    },
+    "environment": {
+      "fileName": "env_lily.png",
+      "description": "A flower shop with a counter and a work station."
+    }
+  }
+]
