@@ -2,10 +2,10 @@
   width: 100%;
 
   .profile {
-    height: 768px;
-    /*background-image: url('/assets/images/floral_bg.png');
+    height: 832px;
+    background-image: url('/assets/images/floral_bg_02.png');
     background-size: cover;
-    background-position: bottom;*/
+    background-position: bottom;
 
     .header {
       display: flex;

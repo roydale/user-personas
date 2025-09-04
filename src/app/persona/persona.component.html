@@ -1,6 +1,6 @@
 <div class="persona mb-4">
   @let user = persona();
-  <div class="profile mb-3" [style.border]="'2px solid ' + user?.type?.themeColor">
+  <div #profile class="profile mb-3" [style.border]="'2px solid ' + user?.type?.themeColor">
     <div class="header"
          title="{{ user?.name }} - {{ user?.type?.name }}"
          [style.background-color]="user?.type?.themeColor">
@@ -18,23 +18,9 @@
                alt="{{ user?.photo?.description }}"
                title="Photo: {{ user?.photo?.description }}"
                class="rounded-3 w-100 h-auto"
-               priority />
+               priority/>
         </div>
-        <!-- QUOTE -->
-        <div class="panel">
-          <div class="d-flex flex-column" title="{{ user?.quote }}">
-            <span class="fs-4 fw-semibold">
-              <i class="bi bi-quote"></i>
-            </span>
-            <span class="fs-5 px-3 text-dark text-opacity-75">{{ user?.quote }}</span>
-            <span class="fs-4 fw-semibold">
-              <i class="bi bi-quote float-end" style="transform: rotate(180deg);"></i>
-            </span>
-          </div>
-        </div>
-      </div>
 
-      <div class="panel-group">
         <!-- DEMOGRAPHICS -->
         <div class="panel">
           <div class="pb-2 text-dark">
@@ -61,39 +47,7 @@
             </div>
           </div>
         </div>
-        <!-- GOALS -->
-        <div class="panel">
-          <div class="pb-2 text-dark">
-            <span class="fs-5 fw-semibold" title="Goals">
-              <i class="bi bi-person-arms-up"></i> Goals
-            </span>
-          </div>
-          <div class="fs-6 text-dark text-opacity-75">
-            <ul class="mb-0">
-              @for (goal of user?.keyGoals; track goal) {
-                <li title="{{ goal }}"><span>{{ goal }}</span></li>
-              }
-            </ul>
-          </div>
-        </div>
-        <!-- BEHAVIOR -->
-        <div class="panel">
-          <div class="pb-2 text-dark">
-            <span class="fs-5 fw-semibold" title="Behavior">
-              <i class="bi bi-emoji-smile"></i> Behavior
-            </span>
-          </div>
-          <div class="fs-6 text-dark text-opacity-75">
-            <ul class="mb-0">
-              @for (behavior of user?.keyBehaviors; track behavior) {
-                <li title="{{ behavior }}"><span>{{ behavior }}</span></li>
-              }
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="panel-group">
         <!-- TRAITS -->
         <div class="panel">
           <div class="pb-2 text-dark">
@@ -140,6 +94,56 @@
             </div>
           </div>
         </div>
+
+      </div>
+
+      <div class="panel-group">
+
+        <!-- QUOTE -->
+        <div class="panel">
+          <div class="d-flex" title="{{ user?.quote }}">
+            <i class="bi bi-quote fs-4 fw-semibold"></i>
+            <span class="fs-5 px-2 py-3 text-dark text-opacity-75">{{ user?.quote }}</span>
+            <i class="bi bi-quote fs-4 fw-semibold" style="transform: rotate(180deg);"></i>
+          </div>
+        </div>
+
+        <!-- BEHAVIOR -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Behavior">
+              <i class="bi bi-emoji-smile"></i> Behavior
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <ul class="mb-0 ps-4">
+              @for (behavior of user?.keyBehaviors; track behavior) {
+                <li title="{{ behavior }}"><span>{{ behavior }}</span></li>
+              }
+            </ul>
+          </div>
+        </div>
+
+        <!-- GOALS -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Goals">
+              <i class="bi bi-person-arms-up"></i> Goals
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <ul class="mb-0 ps-4">
+              @for (goal of user?.keyGoals; track goal) {
+                <li title="{{ goal }}"><span>{{ goal }}</span></li>
+              }
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel-group">
+
         <!-- ENVIRONMENT -->
         <div class="panel square">
           <img ngSrc="/assets/photos/environments/{{ user?.environment?.fileName }}"
@@ -148,13 +152,49 @@
                alt="{{ user?.environment?.description }}"
                title="Environment: {{ user?.environment?.description }}"
                class="rounded-3 w-100 h-auto"
-               priority />
+               priority/>
         </div>
+
+        <!-- PAIN POINTS -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Pain Points">
+              <i class="bi bi-exclamation-triangle"></i> Pain Points
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <ul class="mb-0 ps-4">
+              @for (painPoint of user?.painPoints; track painPoint) {
+                <li title="{{ painPoint }}"><span>{{ painPoint }}</span></li>
+              }
+            </ul>
+          </div>
+        </div>
+
+        <!-- OPPORTUNITIES -->
+        <div class="panel">
+          <div class="pb-2 text-dark">
+            <span class="fs-5 fw-semibold" title="Opportunities">
+              <i class="bi bi-lightbulb"></i> Opportunities
+            </span>
+          </div>
+          <div class="fs-6 text-dark text-opacity-75">
+            <ul class="mb-0 ps-4">
+              @for (opportunity of user?.opportunities; track opportunity) {
+                <li title="{{ opportunity }}"><span>{{ opportunity }}</span></li>
+              }
+            </ul>
+          </div>
+        </div>
+
       </div>
 
     </div>
   </div>
   <div class="d-flex justify-content-end">
-    <button type="button" class="btn btn-primary">Capture</button>
+    <button type="button"
+            class="btn btn-primary"
+            (click)="capturePersonaImage()">Capture
+    </button>
   </div>
 </div>

@@ -45,4 +45,6 @@ export interface Persona {
   keyBehaviors: string[];
   traits: Traits;
   environment: Media;
+  painPoints: string[];
+  opportunities: string[];
 }

@@ -54,7 +54,17 @@
     "environment": {
       "fileName": "env_jessica.png",
       "description": "A cozy, creative home setup, laptop open with design tools, maybe mood boards or sketches, a small vase of flowers on the desk for inspiration."
-    }
+    },
+    "painPoints": [
+      "Browses for inspiration but finds florist sites uninspiring.",
+      "Struggles with flower terminology.",
+      "Wants affordable options but sees only premium arrangements."
+    ],
+    "opportunities": [
+      "Inspiring gallery with seasonal themes and mood-based browsing.",
+      "Simple filters like \"romantic,\" \"birthday,\" or \"thank you.\"",
+      "Affordable \"just because\" bouquet options."
+    ]
   },
   {
     "id": 2,
@@ -116,7 +126,19 @@
     "environment": {
       "fileName": "env_carlos.png",
       "description": "An office space with a busy environment."
-    }
+    },
+    "painPoints": [
+      "Gets frustrated by lengthy checkout.",
+      "Doubts same-day delivery reliability.",
+      "Overwhelmed by too many choices.",
+      "Struggles on sites not optimized for mobile."
+    ],
+    "opportunities": [
+      "Streamlined, mobile-friendly checkout.",
+      "Same-day delivery option with cutoff clearly shown.",
+      "Quick-pick recommendations for occasions.",
+      "Mobile-first responsive design."
+    ]
   },
   {
     "id": 3,
@@ -174,7 +196,17 @@
     "environment": {
       "fileName": "env_emily.png",
       "description": "A creative workspace with buckets of flowers, ribbons, décor items, and sketches of designs."
-    }
+    },
+    "painPoints": [
+      "Event planners want to know \"what’s in stock.\"",
+      "Bulk ordering isn’t always easy online.",
+      "Feels limited by generic arrangements."
+    ],
+    "opportunities": [
+      "Live inventory updates on the website.",
+      "Bulk ordering with event-focused packages.",
+      "Seasonal and customizable arrangement galleries."
+    ]
   },
   {
     "id": 4,
@@ -229,7 +261,7 @@
       ],
       "buyingFrequency": [
         {
-          "icon": "bi-calendar3",
+          "icon": "bi-calendar3-week",
           "value": "Regular (holidays/events)"
         }
       ]
@@ -237,7 +269,17 @@
     "environment": {
       "fileName": "env_karen.png",
       "description": "A tidy desk with a laptop, a paper planner, a coffee mug, and maybe a phone."
-    }
+    },
+    "painPoints": [
+      "Struggles to find websites that allow advance scheduling with reminders.",
+      "Gets frustrated if delivery reliability is inconsistent.",
+      "Worries about overspending."
+    ],
+    "opportunities": [
+      "Support scheduled orders with automated reminders.",
+      "Delivery scheduling with clear cutoff times and confirmation tracking.",
+      "Display budget-friendly bundles and promotional discounts."
+    ]
   },
   {
     "id": 5,
@@ -292,7 +334,7 @@
       ],
       "buyingFrequency": [
         {
-          "icon": "bi-calendar3-week",
+          "icon": "bi-calendar3",
           "value": "Daily (business need)"
         }
       ]
@@ -300,6 +342,18 @@
     "environment": {
       "fileName": "env_lily.png",
       "description": "A flower shop with a counter and a work station."
-    }
+    },
+    "painPoints": [
+      "Spends too much time managing orders manually.",
+      "Challenges with inventory updates.",
+      "Needs features to encourage repeat business.",
+      "Struggles with limited tech knowledge."
+    ],
+    "opportunities": [
+      "Automated order management system.",
+      "Integrated inventory management.",
+      "Loyalty program and personalized offers.",
+      "Simple, intuitive backend dashboard."
+    ]
   }
 ]
