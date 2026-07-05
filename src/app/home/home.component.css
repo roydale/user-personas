@@ -6,9 +6,8 @@
   font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   .personas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-auto-rows: 1fr; /* every row as tall as the tallest card */
     width: 100%;
     max-width: 1024px;
     gap: 50px;

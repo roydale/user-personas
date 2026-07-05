@@ -20,6 +20,8 @@ export class PersonaComponent {
 
   persona = input<Persona>();
 
+  readonly levelBarColors = ['text-bg-danger', 'text-bg-warning', 'text-bg-success', 'text-bg-info'];
+
   capturePersonaImageHtml2Canvas(name: string | undefined) {
     html2canvas(this.screen.nativeElement, {
         scale: 3, // Increase scale factor (try 2, 3, or higher)

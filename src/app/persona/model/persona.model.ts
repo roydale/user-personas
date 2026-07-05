@@ -1,6 +1,7 @@
 export interface PersonaType {
   id: number;
   name: string;
+  userType?: string;
   icon: string;
   themeColor: string;
 }
@@ -10,28 +11,26 @@ export interface Media {
   description: string;
 }
 
-export interface Demographics {
-  age: number;
-  occupation: string;
-  status: string;
-  location: string;
-}
-
-export interface TraitOption {
-  icon: string;
-  value: string;
+export interface DemographicAttribute {
+  label: string;
+  value: string | number;
 }
 
 export interface TraitLevel {
   value: number;
+  max?: number;
   text: string;
 }
 
-export interface Traits {
-  techSavvy: TraitLevel;
-  floralKnowledge: TraitLevel;
-  planningStyle: TraitOption[];
-  buyingFrequency: TraitOption[];
+export interface TraitOption {
+  icon?: string;
+  value: string;
+}
+
+export interface Trait {
+  label: string;
+  level?: TraitLevel;
+  options?: TraitOption[];
 }
 
 export interface Persona {
@@ -40,10 +39,10 @@ export interface Persona {
   name: string;
   photo: Media;
   quote: string;
-  demographics: Demographics;
+  demographics: DemographicAttribute[];
   keyGoals: string[];
   keyBehaviors: string[];
-  traits: Traits;
+  traits: Trait[];
   environment: Media;
   painPoints: string[];
   opportunities: string[];

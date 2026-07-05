@@ -4,66 +4,57 @@
     "type": {
       "id": 1,
       "name": "Guardian",
+      "userType": "Household Caregiver",
       "icon": "bi-hearts",
       "themeColor": "#F59E0B"
     },
     "name": "Grace Mendoza",
     "photo": {
       "fileName": "medicine_manager/grace.png",
-      "description": "A candid photo of a young woman in her 20s sitting at a café, smiling at her laptop."
+      "description": "A woman in her late 30s at a pharmacy counter, reading a prescription photo on her phone."
     },
-    "quote": "I like looking at flowers, even if I don't always buy them, it makes me happy.",
-    "demographics": {
-      "age": 27,
-      "occupation": "Graphic Designer",
-      "status": "Single",
-      "location": "Paramus, NJ"
-    },
+    "quote": "When nobody can read the prescription, it ends up in my hands.",
+    "demographics": [
+      { "label": "Age", "value": 38 },
+      { "label": "Occupation", "value": "HR officer" },
+      { "label": "Household", "value": "With her father (72) and son (9)" },
+      { "label": "Location", "value": "Marilao, Bulacan" },
+      { "label": "Health Context", "value": "Father's hypertension and diabetes; son's asthma" },
+      { "label": "Eligibility Documents", "value": "Father's OSCA ID and purchase booklet, as his representative" },
+      { "label": "Primary Device", "value": "Mid-range Android phone" },
+      { "label": "Primary Intake Door", "value": "Prescription photo" }
+    ],
     "keyGoals": [
-      "Browse casually or for inspiration.",
-      "Stay updated on seasonal themes.",
-      "Find simple, affordable flowers that feel special."
+      "Turn a prescription photo into a priced, discounted list — no retyping.",
+      "One profile per family member, with medicines and refill dates.",
+      "See the household's actual monthly savings."
     ],
     "keyBehaviors": [
-      "She may not buy flowers often, but she'll pick them up on impulse if something catches her eye.",
-      "Is drawn to visuals and artistic arrangements.",
-      "Doesn't know much about floral types."
+      "Photographs prescriptions before leaving the clinic.",
+      "Logs every purchase: what, for whom, at what price.",
+      "Checks the senior discount at home, when it's too late to contest.",
+      "Combines household refills into one pharmacy trip."
     ],
-    "traits": {
-      "techSavvy": {
-        "value": 4,
-        "text": "High"
-      },
-      "floralKnowledge": {
-        "value": 2,
-        "text": "Low to Medium"
-      },
-      "planningStyle": [
-        {
-          "icon": "bi-cup-hot",
-          "value": "Casual"
-        }
-      ],
-      "buyingFrequency": [
-        {
-          "icon": "bi-calendar3-event",
-          "value": "Occasional"
-        }
-      ]
-    },
+    "traits": [
+      { "label": "Tech Comfort", "level": { "value": 4, "text": "High" } },
+      { "label": "Entitlement Familiarity", "level": { "value": 3, "text": "Moderate" } },
+      { "label": "Planning Style", "options": [ { "icon": "bi-card-checklist", "value": "Organized" } ] },
+      { "label": "Purchase Cadence", "options": [ { "icon": "bi-calendar3-week", "value": "Monthly, three people in one trip" } ] }
+    ],
     "environment": {
       "fileName": "medicine_manager/env_grace.png",
-      "description": "A cozy, creative home setup, laptop open with design tools, maybe mood boards or sketches, a small vase of flowers on the desk for inspiration."
+      "description": "A kitchen counter with a pill organizer, prescriptions, a purchase notebook, and a phone."
     },
     "painPoints": [
-      "Browses for inspiration but finds florist sites uninspiring.",
-      "Struggles with flower terminology.",
-      "Wants affordable options but sees only premium arrangements."
+      "Deciphering handwriting at the counter under time pressure.",
+      "Forgetting whose refill falls due in which week.",
+      "No way to know if her father's senior discount was computed right."
     ],
     "opportunities": [
-      "Inspiring gallery with seasonal themes and mood-based browsing.",
-      "Simple filters like \"romantic,\" \"birthday,\" or \"thank you.\"",
-      "Affordable \"just because\" bouquet options."
+      "Photo intake with a confirm screen: verbatim reading beside the interpreted generic.",
+      "Per-member profiles with refill reminders.",
+      "A savings ledger per member, in pesos.",
+      "A printable pharmacy sheet to hand over with the booklet."
     ]
   },
   {
@@ -71,73 +62,56 @@
     "type": {
       "id": 2,
       "name": "Saver",
+      "userType": "Self-Managing Adult",
       "icon": "bi-alarm",
       "themeColor": "#2563EB"
     },
     "name": "Miguel Cerveza",
     "photo": {
       "fileName": "medicine_manager/miguel.png",
-      "description": "A candid photo of a young man in his early 30s rushing into a store or on his phone while commuting, city buildings in the background, with a slightly hurried look."
+      "description": "A young man in his mid 20s checking prices on his phone at night, headset around his neck."
     },
-    "quote": "I need something fast, I don't want to show up empty-handed.",
-    "demographics": {
-      "age": 31,
-      "occupation": "Sales Manager",
-      "status": "Single",
-      "location": "Lodi, NJ"
-    },
+    "quote": "If the generic is the same molecule, why am I paying triple?",
+    "demographics": [
+      { "label": "Age", "value": 25 },
+      { "label": "Occupation", "value": "Call center agent, night shift" },
+      { "label": "Household", "value": "Boards with relatives" },
+      { "label": "Location", "value": "Caloocan" },
+      { "label": "Health Context", "value": "New hypertension diagnosis via telehealth; first maintenance medicine" },
+      { "label": "Eligibility Documents", "value": "None" },
+      { "label": "Primary Device", "value": "Android phone" },
+      { "label": "Primary Intake Door", "value": "E-prescription PDF upload" }
+    ],
     "keyGoals": [
-      "Order quickly.",
-      "Find reliable same-day options.",
-      "Receive recommendations based on occasion or price."
+      "Find the generic equivalent and its fair price against the DPRI benchmark.",
+      "Proof the generic is the same molecule — registration number included.",
+      "Build the refill habit before he breaks it."
     ],
     "keyBehaviors": [
-      "Makes rushed decisions.",
-      "Avoids the stress of picking through options or variety.",
-      "Values speed, same-day delivery, and ready-to-go options.",
-      "Prefers a mobile-friendly flow."
+      "Telehealth consultations and prescriptions, off night-shift hours.",
+      "Price-hunts online at 2 a.m. and screenshots everything.",
+      "Hesitates to question counter staff face to face.",
+      "Skips or delays purchases when the price feels wrong."
     ],
-    "traits": {
-      "techSavvy": {
-        "value": 4,
-        "text": "High"
-      },
-      "floralKnowledge": {
-        "value": 1,
-        "text": "Low"
-      },
-      "planningStyle": [
-        {
-          "icon": "bi-lightning",
-          "value": "Spontaneous"
-        }
-      ],
-      "buyingFrequency": [
-        {
-          "icon": "bi-activity",
-          "value": "Irregular"
-        },
-        {
-          "icon": "bi-exclamation-circle",
-          "value": "Urgent"
-        }
-      ]
-    },
+    "traits": [
+      { "label": "Tech Comfort", "level": { "value": 4, "text": "High" } },
+      { "label": "Entitlement Familiarity", "level": { "value": 1, "text": "Low" } },
+      { "label": "Planning Style", "options": [ { "icon": "bi-hourglass-split", "value": "Still forming" } ] },
+      { "label": "Purchase Cadence", "options": [ { "icon": "bi-calendar3-event", "value": "Monthly, newly started" } ] }
+    ],
     "environment": {
       "fileName": "medicine_manager/env_miguel.png",
-      "description": "An office space with a busy environment."
+      "description": "A small bedroom desk at night with a phone, a laptop, and an e-prescription PDF on screen."
     },
     "painPoints": [
-      "Gets frustrated by lengthy checkout.",
-      "Doubts same-day delivery reliability.",
-      "Overwhelmed by too many choices.",
-      "Struggles on sites not optimized for mobile."
+      "Feeling unable to question a price he suspects is high.",
+      "Not knowing which savings are legal entitlements and which are haggling."
     ],
     "opportunities": [
-      "Streamlined, mobile-friendly checkout.",
-      "Same-day delivery option with cutoff clearly shown.",
-      "Quick-pick recommendations for occasions.",
-      "Mobile-first responsive design."
+      "PDF intake with native text extraction — clean, fast parsing.",
+      "Brand-to-generic matches with FDA registration numbers.",
+      "The DPRI benchmark as the fair-price anchor.",
+      "Refill reminders that survive the night shift — savings without any discount eligibility."
     ]
   },
   {
@@ -145,67 +119,57 @@
     "type": {
       "id": 3,
       "name": "Independent",
+      "userType": "Senior Citizen Patient",
       "icon": "bi-trophy",
       "themeColor": "#10B981"
     },
     "name": "Lito Macaraig",
     "photo": {
       "fileName": "medicine_manager/lito.png",
-      "description": "A candid photo of a stylish woman in her 40s checking floral centerpieces or arranging floral decorations at an event."
+      "description": "A retired teacher in his early 70s recomputing a pharmacy receipt with a calculator."
     },
-    "quote": "The right flowers can make or break an event's atmosphere.",
-    "demographics": {
-      "age": 45,
-      "occupation": "Event Designer",
-      "status": "Divorced",
-      "location": "Rutherford, NJ"
-    },
+    "quote": "Compute it in front of me. I taught arithmetic for thirty years.",
+    "demographics": [
+      { "label": "Age", "value": 71 },
+      { "label": "Occupation", "value": "Retired public school teacher" },
+      { "label": "Household", "value": "Lives with his wife" },
+      { "label": "Location", "value": "Quezon City" },
+      { "label": "Health Context", "value": "Hypertension and diabetes (Losartan 50 mg, Metformin 500 mg)" },
+      { "label": "Eligibility Documents", "value": "OSCA ID and purchase booklet, always carried" },
+      { "label": "Primary Device", "value": "Android phone with enlarged text" },
+      { "label": "Primary Intake Door", "value": "Typed search" }
+    ],
     "keyGoals": [
-      "Find creative, fresh, and unique arrangements for events and clients.",
-      "Get deals or promos for bulk purchases, and prefers scheduled calls for them.",
-      "Discover seasonal selections.",
-      "Stay up to date on stock information."
+      "Know the exact legal counter price before leaving the house.",
+      "Catch miscalculations with a figure he can point to.",
+      "Follow his 1-0-1 regimen without ambiguity."
     ],
     "keyBehaviors": [
-      "Appreciates flower or arrangement details and information, and how to care for them.",
-      "Buys in large quantities for events.",
-      "Is always conscious of the stock of certain flowers she needs."
+      "Buys on a fixed date; knows his prices by heart.",
+      "Recomputes receipts by hand and questions the difference.",
+      "Abandons apps that bury things in menus.",
+      "Reads with enlarged text and taps deliberately."
     ],
-    "traits": {
-      "techSavvy": {
-        "value": 3,
-        "text": "Medium"
-      },
-      "floralKnowledge": {
-        "value": 4,
-        "text": "High"
-      },
-      "planningStyle": [
-        {
-          "icon": "bi-shuffle",
-          "value": "Flexible"
-        }
-      ],
-      "buyingFrequency": [
-        {
-          "icon": "bi-arrow-repeat",
-          "value": "Frequent"
-        }
-      ]
-    },
+    "traits": [
+      { "label": "Tech Comfort", "level": { "value": 3, "text": "Moderate" } },
+      { "label": "Entitlement Familiarity", "level": { "value": 4, "text": "High" } },
+      { "label": "Planning Style", "options": [ { "icon": "bi-calendar3", "value": "Fixed routine" } ] },
+      { "label": "Purchase Cadence", "options": [ { "icon": "bi-arrow-repeat", "value": "Monthly, same week" } ] }
+    ],
     "environment": {
       "fileName": "medicine_manager/env_lito.png",
-      "description": "A creative workspace with buckets of flowers, ribbons, décor items, and sketches of designs."
+      "description": "A tidy home desk with a calculator, receipts, a purchase booklet, and reading glasses."
     },
     "painPoints": [
-      "Event planners want to know \"what's in stock.\"",
-      "Bulk ordering isn't always easy online.",
-      "Feels limited by generic arrangements."
+      "Inconsistent discount computation between pharmacies.",
+      "Small text and crowded screens.",
+      "Feeling he's holding up the line when he questions a price."
     ],
     "opportunities": [
-      "Live inventory updates on the website.",
-      "Bulk ordering with event-focused packages.",
-      "Seasonal and customizable arrangement galleries."
+      "Step-by-step discount math: VAT off first, then the 20% senior discount.",
+      "One savings figure he can state at the counter.",
+      "The dose schedule showing 1-0-1 as morning, noon, evening.",
+      "Large text and simple flows as the accessibility bar (WCAG)."
     ]
   },
   {
@@ -213,72 +177,57 @@
     "type": {
       "id": 4,
       "name": "Advocate",
+      "userType": "PWD Patient",
       "icon": "bi-journal-check",
       "themeColor": "#6B7280"
     },
     "name": "Nica Muñoz",
     "photo": {
       "fileName": "medicine_manager/nica.png",
-      "description": "A candid photo of a woman in her mid-30s at a tidy home desk, with a planner, sticky notes, or a calendar in the frame, showing she likes to keep things scheduled."
+      "description": "A young woman in her late 20s at her laptop, PWD documents on the phone beside her."
     },
-    "quote": "I like to plan ahead so I never miss an important occasion, and I want great value while I'm at it.",
-    "demographics": {
-      "age": 34,
-      "occupation": "Elementary School Teacher",
-      "status": "Married",
-      "location": "Hackensack, NJ"
-    },
+    "quote": "The discount is the law, not a favor.",
+    "demographics": [
+      { "label": "Age", "value": 29 },
+      { "label": "Occupation", "value": "Freelance graphic designer" },
+      { "label": "Household", "value": "Lives alone, rented apartment" },
+      { "label": "Location", "value": "Malolos, Bulacan" },
+      { "label": "Health Context", "value": "Type 1 diabetes; insulin and testing supplies" },
+      { "label": "Eligibility Documents", "value": "PWD ID" },
+      { "label": "Primary Device", "value": "iPhone and a work laptop" },
+      { "label": "Primary Intake Door", "value": "Program navigator; typed search for purchases" }
+    ],
     "keyGoals": [
-      "Schedule flower gifts ahead of time for birthdays, anniversaries, and holidays.",
-      "Receive reliable reminders so nothing is forgotten.",
-      "Make sure her gifts feel thoughtful and well-prepared.",
-      "Stay within a budget and feel she's getting good value."
+      "Assert her discount with the law's text and the math in hand.",
+      "Find programs that share her insulin cost — and their exact requirements.",
+      "Stretch a variable income across a non-negotiable monthly expense."
     ],
     "keyBehaviors": [
-      "Appreciates reminders for important dates.",
-      "Prefers advance orders.",
-      "Compares options for the best deal before finalizing.",
-      "Values reliability and timely delivery."
+      "Reads the laws themselves; keeps her PWD documents on her phone.",
+      "Knows which pharmacies apply the discount and which push back.",
+      "Budgets a fixed medical expense against a variable income.",
+      "Asks for the basis of any figure before accepting it."
     ],
-    "traits": {
-      "techSavvy": {
-        "value": 3,
-        "text": "Medium"
-      },
-      "floralKnowledge": {
-        "value": 2,
-        "text": "Low to Medium"
-      },
-      "planningStyle": [
-        {
-          "icon": "bi-card-checklist",
-          "value": "Highly Organized"
-        },
-        {
-          "icon": "bi-cash",
-          "value": "Budget Conscious"
-        }
-      ],
-      "buyingFrequency": [
-        {
-          "icon": "bi-calendar3-week",
-          "value": "Regular (holidays/events)"
-        }
-      ]
-    },
+    "traits": [
+      { "label": "Tech Comfort", "level": { "value": 4, "text": "High" } },
+      { "label": "Entitlement Familiarity", "level": { "value": 4, "text": "High" } },
+      { "label": "Planning Style", "options": [ { "icon": "bi-journal-check", "value": "Deliberate" } ] },
+      { "label": "Purchase Cadence", "options": [ { "icon": "bi-calendar3-week", "value": "Monthly, non-negotiable" } ] }
+    ],
     "environment": {
       "fileName": "medicine_manager/env_nica.png",
-      "description": "A tidy desk with a laptop, a paper planner, a coffee mug, and maybe a phone."
+      "description": "A small apartment workspace with a laptop, an insulin kit, and a folder of program documents."
     },
     "painPoints": [
-      "Struggles to find websites that allow advance scheduling with reminders.",
-      "Gets frustrated if delivery reliability is inconsistent.",
-      "Worries about overspending."
+      "Pharmacies that apply the discount inconsistently or push back.",
+      "Program information scattered across offices, posters, and hearsay.",
+      "Requirements lists that change without notice."
     ],
     "opportunities": [
-      "Support scheduled orders with automated reminders.",
-      "Delivery scheduling with clear cutoff times and confirmation tracking.",
-      "Display budget-friendly bundles and promotional discounts."
+      "Navigator answers with citations she can show a social worker or pharmacist.",
+      "Program matches with document checklists (MAIFIP, Malasakit, PCSO IMAP, Konsulta).",
+      "Discount math she can present with her PWD ID.",
+      "As-of dates on every answer (MAIFIP was reissued as AO 2026-0031)."
     ]
   },
   {
@@ -286,74 +235,53 @@
     "type": {
       "id": 5,
       "name": "Operator",
+      "userType": "System Administrator",
       "icon": "bi-braces",
       "themeColor": "#F43F5E"
     },
     "name": "Andre Valerio",
     "photo": {
       "fileName": "medicine_manager/andre.png",
-      "description": "A candid photo of a woman in her 40s, wearing an apron arranging flowers in a shop, behind the counter."
+      "description": "A man in his mid 30s at a workstation, pipeline logs and a freshness view on screen."
     },
-    "quote": "I want my website to make ordering easy, so I can spend more time designing.",
-    "demographics": {
-      "age": 42,
-      "occupation": "Florist/Shop Owner",
-      "status": "Married",
-      "location": "Fairview, NJ"
-    },
+    "quote": "Every number on screen must trace back to a file, a date, and a version.",
+    "demographics": [
+      { "label": "Age", "value": 34 },
+      { "label": "Role", "value": "System administrator (the capstone developer)" },
+      { "label": "Responsibility", "value": "Ingestion, data freshness, corpus updates, model configuration" },
+      { "label": "Data In His Care", "value": "FDA registry export, DOH DPRI, assistance program corpus" },
+      { "label": "Primary Tools", "value": "Admin freshness view, pipeline logs, configuration (GEMINI_MODEL)" },
+      { "label": "Primary Intake Door", "value": "None; he operates the pipeline behind the doors" }
+    ],
     "keyGoals": [
-      "Simplified and secure transactions.",
-      "Attract repeat customers.",
-      "Efficient inventory tracking.",
-      "More time for the creative side."
+      "See dataset freshness and failed parses at a glance.",
+      "Trace any figure to a source document and ingest version.",
+      "Swap the model ID without a code change."
     ],
     "keyBehaviors": [
-      "Balances creativity with running the business.",
-      "Ensures customer satisfaction.",
-      "Prefers automated processes.",
-      "Values efficiency."
+      "Runs ingestion when a source publishes, not on a guess.",
+      "Checks failed parses before trusting a fresh dataset.",
+      "Re-embeds the corpus when a source changes (e.g., AO 2026-0031).",
+      "Keeps the model ID in configuration; the free tier lineup changes."
     ],
-    "traits": {
-      "techSavvy": {
-        "value": 2,
-        "text": "Low to Medium"
-      },
-      "floralKnowledge": {
-        "value": 5,
-        "text": "Expert"
-      },
-      "planningStyle": [
-        {
-          "icon": "bi-card-list",
-          "value": "Organized"
-        },
-        {
-          "icon": "bi-hourglass-split",
-          "value": "Busy"
-        }
-      ],
-      "buyingFrequency": [
-        {
-          "icon": "bi-calendar3",
-          "value": "Daily (business need)"
-        }
-      ]
-    },
+    "traits": [
+      { "label": "Tech Comfort", "level": { "value": 5, "text": "Professional" } },
+      { "label": "Entitlement Familiarity", "level": { "value": 4, "text": "High (curator of the sources)" } },
+      { "label": "Planning Style", "options": [ { "icon": "bi-card-list", "value": "Scheduled" } ] },
+      { "label": "Operating Cadence", "options": [ { "icon": "bi-arrow-repeat", "value": "Per source release (FDA, DPRI, AO changes)" } ] }
+    ],
     "environment": {
       "fileName": "medicine_manager/env_andre.png",
-      "description": "A flower shop with a counter and a work station."
+      "description": "A developer workstation with dashboards for dataset freshness, row counts, and ingestion logs."
     },
     "painPoints": [
-      "Spends too much time managing orders manually.",
-      "Challenges with inventory updates.",
-      "Needs features to encourage repeat business.",
-      "Struggles with limited tech knowledge."
+      "Scanned government PDFs with dirty text layers.",
+      "Silent ingestion failures that surface as wrong answers weeks later."
     ],
     "opportunities": [
-      "Automated order management system.",
-      "Integrated inventory management.",
-      "Loyalty program and personalized offers.",
-      "Simple, intuitive backend dashboard."
+      "Freshness view: row counts, as-of dates, parse failures.",
+      "Provenance and ingest version on every displayed figure.",
+      "Config-driven model selection, no deploy required."
     ]
   }
 ]
