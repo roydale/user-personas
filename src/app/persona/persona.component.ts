@@ -23,7 +23,27 @@ export class PersonaComponent {
   readonly levelBarColors = ['text-bg-danger', 'text-bg-warning', 'text-bg-success', 'text-bg-info'];
 
   capturePersonaImageHtml2Canvas(name: string | undefined) {
-    html2canvas(this.screen.nativeElement, {
+    const element: HTMLElement = this.screen.nativeElement;
+
+    // The grid's 1fr rows stretch cards to fractional pixel sizes, which
+    // html2canvas rounds inconsistently at scale > 1, leaving hairline gaps
+    // between the border and the header. Snap to whole pixels while capturing.
+    const rect = element.getBoundingClientRect();
+    const previousStyle = {
+      width: element.style.width,
+      height: element.style.height,
+      flex: element.style.flex
+    };
+    element.style.width = `${Math.round(rect.width)}px`;
+    element.style.height = `${Math.round(rect.height)}px`;
+    element.style.flex = 'none';
+    const restore = () => {
+      element.style.width = previousStyle.width;
+      element.style.height = previousStyle.height;
+      element.style.flex = previousStyle.flex;
+    };
+
+    html2canvas(element, {
         scale: 3, // Increase scale factor (try 2, 3, or higher)
         useCORS: true // Helps if you have external images
       }).then((canvas: HTMLCanvasElement) => {
@@ -35,7 +55,7 @@ export class PersonaComponent {
           link.href = image;
           link.download = `user_persona_${name?.replace(' ', '_')?.toLowerCase()}.png`; // Custom filename
           link.click();
-        });
+        }).finally(restore);
   }
 
   capturePersonaImage() {

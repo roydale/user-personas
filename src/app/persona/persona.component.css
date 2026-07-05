@@ -21,6 +21,9 @@
       justify-content: space-between;
       align-items: center;
       color: #FFFFFF;
+      /* Overlap the card's 2px border: header and border share the theme color,
+         so this hides the sub-pixel seam html2canvas leaves at fractional DPR. */
+      margin: -2px -2px 0;
 
       h4, h5{
         margin: 0;
