@@ -3,16 +3,16 @@
     "id": 1,
     "type": {
       "id": 1,
-      "name": "Admirer",
+      "name": "Guardian",
       "icon": "bi-hearts",
       "themeColor": "#F59E0B"
     },
-    "name": "Jessica Chen",
+    "name": "Grace Mendoza",
     "photo": {
-      "fileName": "jessica.png",
+      "fileName": "medicine_manager/grace.png",
       "description": "A candid photo of a young woman in her 20s sitting at a café, smiling at her laptop."
     },
-    "quote": "I like looking at flowers, even if I don’t always buy them, it makes me happy.",
+    "quote": "I like looking at flowers, even if I don't always buy them, it makes me happy.",
     "demographics": {
       "age": 27,
       "occupation": "Graphic Designer",
@@ -25,9 +25,9 @@
       "Find simple, affordable flowers that feel special."
     ],
     "keyBehaviors": [
-      "She may not buy flowers often, but she’ll pick them up on impulse if something catches her eye.",
+      "She may not buy flowers often, but she'll pick them up on impulse if something catches her eye.",
       "Is drawn to visuals and artistic arrangements.",
-      "Doesn’t know much about floral types."
+      "Doesn't know much about floral types."
     ],
     "traits": {
       "techSavvy": {
@@ -52,7 +52,7 @@
       ]
     },
     "environment": {
-      "fileName": "env_jessica.png",
+      "fileName": "medicine_manager/env_grace.png",
       "description": "A cozy, creative home setup, laptop open with design tools, maybe mood boards or sketches, a small vase of flowers on the desk for inspiration."
     },
     "painPoints": [
@@ -70,16 +70,16 @@
     "id": 2,
     "type": {
       "id": 2,
-      "name": "Clutch",
+      "name": "Saver",
       "icon": "bi-alarm",
       "themeColor": "#2563EB"
     },
-    "name": "Carlos Rivera",
+    "name": "Miguel Cerveza",
     "photo": {
-      "fileName": "carlos.png",
+      "fileName": "medicine_manager/miguel.png",
       "description": "A candid photo of a young man in his early 30s rushing into a store or on his phone while commuting, city buildings in the background, with a slightly hurried look."
     },
-    "quote": "I need something fast, I don’t want to show up empty-handed.",
+    "quote": "I need something fast, I don't want to show up empty-handed.",
     "demographics": {
       "age": 31,
       "occupation": "Sales Manager",
@@ -124,7 +124,7 @@
       ]
     },
     "environment": {
-      "fileName": "env_carlos.png",
+      "fileName": "medicine_manager/env_miguel.png",
       "description": "An office space with a busy environment."
     },
     "painPoints": [
@@ -144,13 +144,13 @@
     "id": 3,
     "type": {
       "id": 3,
-      "name": "Enthusiast",
+      "name": "Independent",
       "icon": "bi-trophy",
       "themeColor": "#10B981"
     },
-    "name": "Emily Johnson",
+    "name": "Lito Macaraig",
     "photo": {
-      "fileName": "emily.png",
+      "fileName": "medicine_manager/lito.png",
       "description": "A candid photo of a stylish woman in her 40s checking floral centerpieces or arranging floral decorations at an event."
     },
     "quote": "The right flowers can make or break an event's atmosphere.",
@@ -194,12 +194,12 @@
       ]
     },
     "environment": {
-      "fileName": "env_emily.png",
+      "fileName": "medicine_manager/env_lito.png",
       "description": "A creative workspace with buckets of flowers, ribbons, décor items, and sketches of designs."
     },
     "painPoints": [
-      "Event planners want to know \"what’s in stock.\"",
-      "Bulk ordering isn’t always easy online.",
+      "Event planners want to know \"what's in stock.\"",
+      "Bulk ordering isn't always easy online.",
       "Feels limited by generic arrangements."
     ],
     "opportunities": [
@@ -212,16 +212,16 @@
     "id": 4,
     "type": {
       "id": 4,
-      "name": "Planner",
+      "name": "Advocate",
       "icon": "bi-journal-check",
       "themeColor": "#6B7280"
     },
-    "name": "Karen Mitchell",
+    "name": "Nica Muñoz",
     "photo": {
-      "fileName": "karen.png",
+      "fileName": "medicine_manager/nica.png",
       "description": "A candid photo of a woman in her mid-30s at a tidy home desk, with a planner, sticky notes, or a calendar in the frame, showing she likes to keep things scheduled."
     },
-    "quote": "I like to plan ahead so I never miss an important occasion, and I want great value while I’m at it.",
+    "quote": "I like to plan ahead so I never miss an important occasion, and I want great value while I'm at it.",
     "demographics": {
       "age": 34,
       "occupation": "Elementary School Teacher",
@@ -232,7 +232,7 @@
       "Schedule flower gifts ahead of time for birthdays, anniversaries, and holidays.",
       "Receive reliable reminders so nothing is forgotten.",
       "Make sure her gifts feel thoughtful and well-prepared.",
-      "Stay within a budget and feel she’s getting good value."
+      "Stay within a budget and feel she's getting good value."
     ],
     "keyBehaviors": [
       "Appreciates reminders for important dates.",
@@ -267,7 +267,7 @@
       ]
     },
     "environment": {
-      "fileName": "env_karen.png",
+      "fileName": "medicine_manager/env_nica.png",
       "description": "A tidy desk with a laptop, a paper planner, a coffee mug, and maybe a phone."
     },
     "painPoints": [
@@ -285,13 +285,13 @@
     "id": 5,
     "type": {
       "id": 5,
-      "name": "Florist (Internal Users)",
-      "icon": "bi-flower1",
+      "name": "Operator",
+      "icon": "bi-braces",
       "themeColor": "#F43F5E"
     },
-    "name": "Lily da Floris",
+    "name": "Andre Valerio",
     "photo": {
-      "fileName": "lily.png",
+      "fileName": "medicine_manager/andre.png",
       "description": "A candid photo of a woman in her 40s, wearing an apron arranging flowers in a shop, behind the counter."
     },
     "quote": "I want my website to make ordering easy, so I can spend more time designing.",
@@ -340,7 +340,7 @@
       ]
     },
     "environment": {
-      "fileName": "env_lily.png",
+      "fileName": "medicine_manager/env_andre.png",
       "description": "A flower shop with a counter and a work station."
     },
     "painPoints": [

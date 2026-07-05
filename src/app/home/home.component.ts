@@ -17,7 +17,7 @@ export class HomeComponent {
   private httpClient = inject(HttpClient);
 
   personas = toSignal(
-    this.httpClient.get<Persona[]>('/assets/data/personas.json').pipe(take(1)),
+    this.httpClient.get<Persona[]>('/assets/data/medicine_manager/personas.json').pipe(take(1)),
     { initialValue: [] }
   );
 
