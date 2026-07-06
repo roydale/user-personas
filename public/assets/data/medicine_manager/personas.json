@@ -4,7 +4,7 @@
     "type": {
       "id": 1,
       "name": "Guardian",
-      "userType": "Household Caregiver",
+      "userType": "Household caregiver who knows the system",
       "icon": "bi-hearts",
       "themeColor": "#F59E0B"
     },
@@ -25,19 +25,19 @@
       { "label": "Primary Intake Door", "value": "Prescription photo" }
     ],
     "keyGoals": [
-      "Turn a prescription photo into a priced, discounted list — no retyping.",
+      "Turn a prescription photo into a priced, discounted list without retyping.",
       "One profile per family member, with medicines and refill dates.",
       "See the household's actual monthly savings."
     ],
     "keyBehaviors": [
       "Photographs prescriptions before leaving the clinic.",
       "Logs every purchase: what, for whom, at what price.",
-      "Checks the senior discount at home, when it's too late to contest.",
+      "Checks the senior discount at home, when it is too late to contest.",
       "Combines household refills into one pharmacy trip."
     ],
     "traits": [
       { "label": "Tech Comfort", "level": { "value": 4, "text": "High" } },
-      { "label": "Entitlement Familiarity", "level": { "value": 3, "text": "Moderate" } },
+      { "label": "Entitlement Familiarity", "level": { "value": 3.5, "text": "Moderate to high; verifies the math" } },
       { "label": "Planning Style", "options": [ { "icon": "bi-card-checklist", "value": "Organized" } ] },
       { "label": "Purchase Cadence", "options": [ { "icon": "bi-calendar3-week", "value": "Monthly, three people in one trip" } ] }
     ],
@@ -48,7 +48,7 @@
     "painPoints": [
       "Deciphering handwriting at the counter under time pressure.",
       "Forgetting whose refill falls due in which week.",
-      "No way to know if her father's senior discount was computed right."
+      "No way to know if her father's senior discount was computed correctly."
     ],
     "opportunities": [
       "Photo intake with a confirm screen: verbatim reading beside the interpreted generic.",
@@ -61,65 +61,66 @@
     "id": 2,
     "type": {
       "id": 2,
-      "name": "Saver",
-      "userType": "Self-Managing Adult",
-      "icon": "bi-alarm",
-      "themeColor": "#2563EB"
+      "name": "Newcomer",
+      "userType": "Household caregiver still learning the rules",
+      "icon": "bi-signpost-2",
+      "themeColor": "#8B5CF6"
     },
-    "name": "Miguel Cerveza",
+    "name": "Rosa San Pedro",
     "photo": {
-      "fileName": "medicine_manager/miguel.png",
-      "description": "A young man in his mid 20s checking prices on his phone at night, headset around his neck."
+      "fileName": "medicine_manager/rosa.png",
+      "description": "A woman in her mid 40s at a public market stall, reading a pharmacy receipt with a phone in hand."
     },
-    "quote": "If the generic is the same molecule, why am I paying triple?",
+    "quote": "Nobody told me there was a discount, or a booklet, or any of this.",
     "demographics": [
-      { "label": "Age", "value": 25 },
-      { "label": "Occupation", "value": "Call center agent, night shift" },
-      { "label": "Household", "value": "Boards with relatives" },
-      { "label": "Location", "value": "Caloocan" },
-      { "label": "Health Context", "value": "New hypertension diagnosis via telehealth; first maintenance medicine" },
-      { "label": "Eligibility Documents", "value": "None" },
+      { "label": "Age", "value": 45 },
+      { "label": "Occupation", "value": "Public market stall vendor" },
+      { "label": "Household", "value": "With her younger brother (38), recovering from a stroke" },
+      { "label": "Location", "value": "Meycauayan, Bulacan" },
+      { "label": "Health Context", "value": "Brother's post-stroke maintenance (antihypertensive, clopidogrel)" },
+      { "label": "Eligibility Documents", "value": "None yet; his PWD application is filed and pending" },
       { "label": "Primary Device", "value": "Android phone" },
-      { "label": "Primary Intake Door", "value": "E-prescription PDF upload" }
+      { "label": "Primary Intake Door", "value": "Eligibility pre-screen, then typed search" }
     ],
     "keyGoals": [
-      "Find the generic equivalent and its fair price against the DPRI benchmark.",
-      "Proof the generic is the same molecule — registration number included.",
-      "Build the refill habit before he breaks it."
+      "Learn what her brother will be entitled to once the PWD ID arrives.",
+      "Find any help that applies now, while the application is pending.",
+      "Know what a fair price looks like today, before any discount exists."
     ],
     "keyBehaviors": [
-      "Telehealth consultations and prescriptions, off night-shift hours.",
-      "Price-hunts online at 2 a.m. and screenshots everything.",
-      "Hesitates to question counter staff face to face.",
-      "Skips or delays purchases when the price feels wrong."
+      "Asks neighbors and the caregivers' Facebook group before any office.",
+      "Pays whatever the counter charges because she does not know what to question.",
+      "Keeps every receipt in an envelope, unsure what to check them against.",
+      "Fits pharmacy trips around the stall and her brother's therapy."
     ],
     "traits": [
-      { "label": "Tech Comfort", "level": { "value": 4, "text": "High" } },
+      { "label": "Tech Comfort", "level": { "value": 3, "text": "Moderate" } },
       { "label": "Entitlement Familiarity", "level": { "value": 1, "text": "Low" } },
-      { "label": "Planning Style", "options": [ { "icon": "bi-hourglass-split", "value": "Still forming" } ] },
-      { "label": "Purchase Cadence", "options": [ { "icon": "bi-calendar3-event", "value": "Monthly, newly started" } ] }
+      { "label": "Planning Style", "options": [ { "icon": "bi-shuffle", "value": "Improvising under new duties" } ] },
+      { "label": "Purchase Cadence", "options": [ { "icon": "bi-calendar3-event", "value": "Monthly, just started" } ] }
     ],
     "environment": {
-      "fileName": "medicine_manager/env_miguel.png",
-      "description": "A small bedroom desk at night with a phone, a laptop, and an e-prescription PDF on screen."
+      "fileName": "medicine_manager/env_rosa.png",
+      "description": "A market stall counter with an envelope of receipts, a notebook, and a phone."
     },
     "painPoints": [
-      "Feeling unable to question a price he suspects is high.",
-      "Not knowing which savings are legal entitlements and which are haggling."
+      "Not knowing what to ask for, at the counter or at the barangay.",
+      "Conflicting hearsay about discounts, booklets, and programs.",
+      "Pending-status limbo: nobody can say what applies while the ID is in process."
     ],
     "opportunities": [
-      "PDF intake with native text extraction — clean, fast parsing.",
-      "Brand-to-generic matches with FDA registration numbers.",
-      "The DPRI benchmark as the fair-price anchor.",
-      "Refill reminders that survive the night shift — savings without any discount eligibility."
+      "A pre-screen that says what applies now and what changes the day the PWD ID is issued.",
+      "The discount calculator as a teacher: VAT and discount steps shown as they apply.",
+      "Navigator guidance for getting the PWD ID (cited from RA 10754), plus programs that need no ID: MAIFIP, Malasakit.",
+      "A profile that records eligibility as pending and updates prices the day the ID is registered."
     ]
   },
   {
     "id": 3,
     "type": {
       "id": 3,
-      "name": "Independent",
-      "userType": "Senior Citizen Patient",
+      "name": "Rights Holder",
+      "userType": "Self-managing patient who knows the entitlements",
       "icon": "bi-trophy",
       "themeColor": "#10B981"
     },
@@ -135,7 +136,7 @@
       { "label": "Household", "value": "Lives with his wife" },
       { "label": "Location", "value": "Quezon City" },
       { "label": "Health Context", "value": "Hypertension and diabetes (Losartan 50 mg, Metformin 500 mg)" },
-      { "label": "Eligibility Documents", "value": "OSCA ID and purchase booklet, always carried" },
+      { "label": "Eligibility Documents", "value": "OSCA ID and purchase booklet, carried on every trip (RA 9994)" },
       { "label": "Primary Device", "value": "Android phone with enlarged text" },
       { "label": "Primary Intake Door", "value": "Typed search" }
     ],
@@ -163,7 +164,7 @@
     "painPoints": [
       "Inconsistent discount computation between pharmacies.",
       "Small text and crowded screens.",
-      "Feeling he's holding up the line when he questions a price."
+      "Made to feel he is holding up the line when he questions a price."
     ],
     "opportunities": [
       "Step-by-step discount math: VAT off first, then the 20% senior discount.",
@@ -176,12 +177,12 @@
     "id": 4,
     "type": {
       "id": 4,
-      "name": "Advocate",
-      "userType": "PWD Patient",
+      "name": "Rights Holder",
+      "userType": "Self-managing patient who knows the entitlements",
       "icon": "bi-journal-check",
       "themeColor": "#6B7280"
     },
-    "name": "Nica Muñoz",
+    "name": "Nica Madriaga",
     "photo": {
       "fileName": "medicine_manager/nica.png",
       "description": "A young woman in her late 20s at her laptop, PWD documents on the phone beside her."
@@ -193,13 +194,13 @@
       { "label": "Household", "value": "Lives alone, rented apartment" },
       { "label": "Location", "value": "Malolos, Bulacan" },
       { "label": "Health Context", "value": "Type 1 diabetes; insulin and testing supplies" },
-      { "label": "Eligibility Documents", "value": "PWD ID" },
+      { "label": "Eligibility Documents", "value": "PWD ID (RA 10754)" },
       { "label": "Primary Device", "value": "iPhone and a work laptop" },
-      { "label": "Primary Intake Door", "value": "Program navigator; typed search for purchases" }
+      { "label": "Primary Intake Door", "value": "Assistance program navigator; typed search for purchases" }
     ],
     "keyGoals": [
       "Assert her discount with the law's text and the math in hand.",
-      "Find programs that share her insulin cost — and their exact requirements.",
+      "Find programs that share her insulin cost, and the documents each one requires.",
       "Stretch a variable income across a non-negotiable monthly expense."
     ],
     "keyBehaviors": [
@@ -234,8 +235,66 @@
     "id": 5,
     "type": {
       "id": 5,
+      "name": "Saver",
+      "userType": "Self-managing patient new to the system",
+      "icon": "bi-alarm",
+      "themeColor": "#2563EB"
+    },
+    "name": "Miguel Salcedo",
+    "photo": {
+      "fileName": "medicine_manager/miguel.png",
+      "description": "A young man in his mid 20s checking prices on his phone at night, headset around his neck."
+    },
+    "quote": "If the generic is the same molecule, why am I paying triple?",
+    "demographics": [
+      { "label": "Age", "value": 25 },
+      { "label": "Occupation", "value": "Call center agent, night shift" },
+      { "label": "Household", "value": "Boards with relatives" },
+      { "label": "Location", "value": "Caloocan" },
+      { "label": "Health Context", "value": "New hypertension diagnosis via telehealth; first maintenance medicine" },
+      { "label": "Eligibility Documents", "value": "None" },
+      { "label": "Primary Device", "value": "Android phone" },
+      { "label": "Primary Intake Door", "value": "E-prescription PDF upload" }
+    ],
+    "keyGoals": [
+      "Find the generic equivalent and its fair price against the DPRI benchmark.",
+      "Proof that the generic is the same molecule, with the registration number included.",
+      "Build the refill habit before he breaks it."
+    ],
+    "keyBehaviors": [
+      "Telehealth consultations and prescriptions, off night-shift hours.",
+      "Price-hunts online at 2 a.m. and screenshots everything.",
+      "Hesitates to question counter staff face to face.",
+      "Skips or delays purchases when the price feels wrong."
+    ],
+    "traits": [
+      { "label": "Tech Comfort", "level": { "value": 4, "text": "High" } },
+      { "label": "Entitlement Familiarity", "level": { "value": 1, "text": "Low" } },
+      { "label": "Planning Style", "options": [ { "icon": "bi-hourglass-split", "value": "Still forming" } ] },
+      { "label": "Purchase Cadence", "options": [ { "icon": "bi-calendar3-event", "value": "Monthly, newly started" } ] }
+    ],
+    "environment": {
+      "fileName": "medicine_manager/env_miguel.png",
+      "description": "A small bedroom desk at night with a phone, a laptop, and an e-prescription PDF on screen."
+    },
+    "painPoints": [
+      "Feeling unable to question a price he suspects is high.",
+      "Not knowing which savings are legal entitlements and which are haggling."
+    ],
+    "opportunities": [
+      "PDF intake with native text extraction for clean, fast parsing.",
+      "Brand-to-generic matches with FDA registration numbers.",
+      "The DPRI benchmark as the fair-price anchor.",
+      "An honest 'no statutory discount' answer, then need-based routes: MAIFIP, PCSO IMAP (request form, medical abstract, prescription), guided Konsulta registration.",
+      "Refill reminders that survive the night shift; the savings story does not depend on discount eligibility."
+    ]
+  },
+  {
+    "id": 6,
+    "type": {
+      "id": 6,
       "name": "Operator",
-      "userType": "System Administrator",
+      "userType": "System administrator",
       "icon": "bi-braces",
       "themeColor": "#F43F5E"
     },

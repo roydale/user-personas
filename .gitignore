@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Local working backups of persona photos
+public/assets/photos/**/backup/
